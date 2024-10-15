@@ -1,0 +1,14 @@
+# .github/workflows/main.yaml
+# Copyright 2023 Keith Maxwell
+# SPDX-License-Identifier: CC0-1.0
+
+on: # yamllint disable-line rule:truthy
+  push:
+    branches: [main]
+    tags: [v*]
+  pull_request: { branches: [main] }
+  workflow_dispatch:
+
+jobs:
+  nox:
+    uses: maxwell-k/dotlocalslashbin/.github/workflows/nox.yaml@v0.0.9
