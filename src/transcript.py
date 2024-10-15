@@ -15,7 +15,7 @@ from pathlib import Path
 from youtube_transcript_api import YouTubeTranscriptApi
 
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 
 class _CustomNamespace(Namespace):
