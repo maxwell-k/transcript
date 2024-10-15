@@ -20,7 +20,7 @@ dependencies = [
 Home = "https://github.com/maxwell-k/transcript/"
 
 [project.scripts]
-dotlocalslashbin = "transcript:main"
+transcript = "transcript:main"
 
 [project.optional-dependencies]
 test = [
