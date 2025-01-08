@@ -11,4 +11,4 @@ on: # yamllint disable-line rule:truthy
 
 jobs:
   nox:
-    uses: maxwell-k/dotlocalslashbin/.github/workflows/nox.yaml@v0.0.12
+    uses: maxwell-k/dotlocalslashbin/.github/workflows/nox.yaml@v0.0.14
