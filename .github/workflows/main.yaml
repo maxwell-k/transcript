@@ -13,4 +13,4 @@ jobs:
   renovate:
     uses: maxwell-k/dotlocalslashbin/.github/workflows/renovate.yaml@v0.0.15
   nox:
-    uses: maxwell-k/dotlocalslashbin/.github/workflows/nox.yaml@v0.0.14
+    uses: maxwell-k/dotlocalslashbin/.github/workflows/nox.yaml@v0.0.15
