@@ -10,5 +10,7 @@ on: # yamllint disable-line rule:truthy
   workflow_dispatch:
 
 jobs:
+  renovate:
+    uses: maxwell-k/dotlocalslashbin/.github/workflows/renovate.yaml@v0.0.15
   nox:
     uses: maxwell-k/dotlocalslashbin/.github/workflows/nox.yaml@v0.0.14
