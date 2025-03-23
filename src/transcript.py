@@ -12,7 +12,9 @@
 from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser, Namespace
 from pathlib import Path
 
-from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api import (
+    YouTubeTranscriptApi,  # pyright: ignore reportPrivateUsage
+)
 
 
 __version__ = "0.0.2"
