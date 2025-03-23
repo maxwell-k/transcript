@@ -29,7 +29,7 @@ def github_output(session: nox.Session) -> None:
     if len(scripts) > 1:
         session.error("More than one script found in src/")
     version = session.run(PYTHON, scripts.pop(), "--version", silent=True)
-    print("version=" + cast(str, version).strip())  # version= adds quotes
+    print("version=" + cast("str", version).strip())  # version= adds quotes
 
 
 @nox.session(python=PRIMARY)
@@ -68,7 +68,7 @@ def static(session: nox.Session) -> None:
     session.run(
         "npm",
         "exec",
-        "pyright@1.1.396",
+        "pyright@1.1.397",
         "--yes",
         "--",
         f"--pythonpath={PYTHON}",
