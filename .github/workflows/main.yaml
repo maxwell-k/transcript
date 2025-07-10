@@ -12,7 +12,7 @@ on: # yamllint disable-line rule:truthy
 jobs:
   renovate:
     # yamllint disable-line rule:line-length
-    uses: maxwell-k/dotlocalslashbin/.github/workflows/renovate.yaml@v0.0.18
+    uses: maxwell-k/dotlocalslashbin/.github/workflows/renovate.yaml@a33ce13bfa55aac3dbc6658478e1e91c55003020 # v0.0.18
   nox:
     # yamllint disable-line rule:line-length
-    uses: maxwell-k/dotlocalslashbin/.github/workflows/nox.yaml@v0.0.18
+    uses: maxwell-k/dotlocalslashbin/.github/workflows/nox.yaml@a33ce13bfa55aac3dbc6658478e1e91c55003020 # v0.0.18
