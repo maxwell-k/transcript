@@ -21,7 +21,6 @@ DIST = Path("dist")
 @nox.session()
 def dev(session: Session) -> None:
     """Set up a development environment (virtual environment)."""
-    session.install("uv")
     metadata = nox.project.load_toml("pyproject.toml")
     session.run("uv", "venv", "--python", metadata["project"]["requires-python"], VENV)
     env = {"VIRTUAL_ENV": VENV}
