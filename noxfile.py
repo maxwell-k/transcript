@@ -18,7 +18,7 @@ PYTHON = Path().absolute() / VENV / "bin" / "python"
 DIST = Path("dist")
 
 
-@nox.session()
+@nox.session(venv_backend="none")
 def dev(session: Session) -> None:
     """Set up a development environment (virtual environment)."""
     metadata = nox.project.load_toml("pyproject.toml")
@@ -54,11 +54,10 @@ def static(session: Session) -> None:
         "--yes",
         "--",
         f"--pythonpath={PYTHON}",
-        external=True,
     )
 
     def run(cmd: str) -> None:
-        session.run(PYTHON, "-m", *cmd.split(), external=True)
+        session.run(PYTHON, "-m", *cmd.split())
 
     run("reuse lint")
     run("usort check .")
