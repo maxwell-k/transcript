@@ -11,11 +11,10 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
-        "/^noxfile.py$/"
+        "noxfile.py"
       ],
-      "depNameTemplate": "pyright",
       "matchStrings": [
-        "\\\"pyright@(?<currentValue>.+?)\\\""
+        "\\\"(?<depName>.+?)@(?<currentValue>.+?)\\\""
       ],
       "datasourceTemplate": "npm"
     }
