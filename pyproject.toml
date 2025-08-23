@@ -13,7 +13,7 @@ classifiers = [
 ]
 license = { file = "LICENSES/MPL-2.0.txt" }
 dependencies = [
-  "youtube-transcript-api<1.2.0",
+  "youtube-transcript-api<1.2.3",
 ]
 requires-python = ">=3.13"
 
