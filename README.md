@@ -15,9 +15,9 @@ Similar results can be obtained with:
 
 The recommended way to run `transcript` is with [uv].
 
-Command to install `transcript` from GitHub:
+Command to run `transcript` from GitHub:
 
-    uv tool install git+https://github.com/maxwell-k/transcript
+    uv tool run git+https://github.com/maxwell-k/transcript
 
 [uv]: https://github.com/astral-sh/uv
 
