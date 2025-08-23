@@ -1,3 +1,14 @@
+Archived: this use an old API in [youtube-transcript-api] that was deprecated in
+`v1.0.0` (March 2025) and removed in `v1.2.0` (July 2025).
+
+Similar results can be obtained with:
+
+    uv tool run youtube_transcript_api --format text jNQXAC9IVRw
+
+[youtube-transcript-api]: https://github.com/jdepoix/youtube-transcript-api
+
+---
+
 `transcript` → CLI to display a YouTube transcript.
 
 ## Install
